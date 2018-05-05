@@ -1,0 +1,20 @@
+Significance of Resource class:-
+
+The Resources class allows you to manage different application data in a certain directory,providing a dictionary-style
+access functionality for your in-application resources.
+
+To access individual files, you do not need to concat paths the whole time and regardless of the current directory, 
+your application operates on, you can access your resource files at any time through the Resources instance, 
+you created initially.
+
+The Resources class is also able to scan an index archived files, compressed via ZIP or TAR, and 
+subdiectories automatically.
+The Resources class manages a set of file resources and eases accessing them by using relative paths, scanning 
+archives automatically and so on.
+
+
+Job of dispatch_request method :-
+                                    The dispatch_request method is one of the first method called during the request. 
+Not surprisingly, it handles dispatching the request to the proper request handler. Overriding this method allows you 
+to see what exactly is getting sent to your application, and what exactly is being sent back in the responce. This might 
+be useful if you are seeing unexpected session creation.
